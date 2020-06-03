@@ -1,0 +1,24 @@
+package g5;
+
+
+
+public class simpleindexsec {
+	private String holdername, recPos;
+
+    public String getholdername() {
+        return holdername;
+    }
+
+    public void setholdername(String holdername) {
+        this.holdername = holdername;
+    }
+
+    public String getRecPos() {
+        return recPos;
+    }
+
+    public void setRecPos(String recPos) {
+        this.recPos = recPos;
+    }
+
+}

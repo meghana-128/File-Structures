@@ -1,0 +1,25 @@
+package g5;
+
+
+
+
+public class simpleindexpri
+{
+private String cvv, recPos;
+
+    public String getcvv() {
+        return cvv;
+    }
+
+    public void setcvv(String cvv) {
+        this.cvv = cvv;
+    }
+
+    public String getRecPos() {
+        return recPos;
+    }
+
+    public void setRecPos(String recPos) {
+        this.recPos = recPos;
+    }
+}

@@ -1,0 +1,153 @@
+package g5;
+
+
+
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class main {
+		 public static void main(String args[]) throws IOException{
+				@SuppressWarnings("resource")
+				Scanner scanner = new Scanner(System.in);
+				JavaApplication3 stu = new JavaApplication3();
+				JavaApplication4 std = new JavaApplication4();
+				stu.indexing2();
+	          
+	            std.indexing1();
+	            std.priIndex();
+	            stu.priIndex();
+	            while (true){
+	                System.out.println("################################################");
+	                System.out.println("Welcome");
+	                System.out.println("________________________________________________");
+	            System.out.println("Enter your Valuable choice: "); 
+	                System.out.println("################################################");
+		System.out.println("1>primary: \n2>secondary:");
+	        System.out.println("################################################");
+
+		int choice = scanner.nextInt();
+		switch(choice) {
+		case 1 : while (true){
+	        System.out.println("################################################");
+	        System.out.println("Welcome");
+	        System.out.println("________________________________________________");
+	    System.out.println("Enter your Valuable choice: "); 
+	        System.out.println("################################################");
+	System.out.println("1>Enter credit card details: \n2>Enter the key to Search: \n3>To Build Index of my Data: \n4>Enter the key to be Deleted: \n5>Exit");
+	System.out.println("################################################");
+
+	int choice1 = scanner.nextInt();
+
+	switch(choice1){
+
+
+	case 1: long starttime =System.nanoTime();
+	                        stu.getData2();
+	                        stu.add2();
+	                        stu.priIndex();
+	                        long endtime =System.nanoTime();
+	                        long totaltime=endtime-starttime;
+	                        System.out.println(totaltime/1000000+"msec");
+			break;
+	case 2: long starttime1 =System.nanoTime();
+	                    stu.searchpri();
+	                    long endtime1 =System.nanoTime();
+	                        long totaltime1=endtime1-starttime1;
+	                        System.out.println(totaltime1/1000000+"msec");
+	    break;
+	case 3:long starttime2 =System.nanoTime();
+	                    stu.indexing2();
+	                    long endtime2 =System.nanoTime();
+	                        long totaltime2=endtime2-starttime2;
+	                        System.out.println(totaltime2/1000000+"msec");
+			break;
+	                case 4:long starttime3 =System.nanoTime();
+	                    stu.deletepri();
+	                    long endtime3=System.nanoTime();
+	                        long totaltime3=endtime3-starttime3;
+	                        System.out.println(totaltime3/1000000+"msec");
+	                break;
+	case 5: System.out.println("Exiting..");
+			System.exit(0);
+	default : System.out.println("Enter a valid choice!");
+	}
+	}
+		
+		case 2 :  while (true){
+	        System.out.println("################################################");
+	        System.out.println("Welcome");
+	        System.out.println("________________________________________________");
+	    System.out.println("Enter your Valuable choice: "); 
+	        System.out.println("################################################");
+	System.out.println("1>Enter details: \n2>Enter the key to Search: \n3>To Build Index of my Data: \n4>Enter the key to be Deleted: \n5>Exit");
+	System.out.println("################################################");
+
+	int choice2 = scanner.nextInt();
+
+	switch(choice2){
+
+
+	case 1: long starttime =System.nanoTime();
+	                        std.getData1();
+	                        std.add1();
+	                        std.priIndex();
+	                        long endtime =System.nanoTime();
+	                        long totaltime=endtime-starttime;
+	                        System.out.println(totaltime/110+"msec");
+			break;
+	case 2: long starttime1 =System.nanoTime();
+	                    std.searchsec();
+	                    long endtime1 =System.nanoTime();
+	                        long totaltime1=endtime1-starttime1;
+	                        System.out.println(totaltime1/110+"msec");
+	    break;
+	case 3:long starttime2 =System.nanoTime();
+	                    std.indexing1();
+	                    long endtime2 =System.nanoTime();
+	                        long totaltime2=endtime2-starttime2;
+	                        System.out.println(totaltime2/110+"msec");
+			break;
+	case 4:long starttime3 =System.nanoTime();
+	                    std.delete();
+	                    long endtime3=System.nanoTime();
+	                        long totaltime3=endtime3-starttime3;
+	                        System.out.println(totaltime3/110+"msec");
+	                break;
+	case 5: System.out.println("Exiting..");
+			System.exit(0);
+	default : System.out.println("Enter a valid choice!");
+	}
+	}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+	            }
+		
+		
+		}
+		
+	            }	
+		
+	            
+		
+		
+		
+		
+
+
+
